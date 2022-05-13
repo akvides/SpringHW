@@ -10,10 +10,11 @@
 		2DA9E863B1E831823D56050A /* Pods_SpringHW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9D44AFB9CD6809F0AC907B /* Pods_SpringHW.framework */; };
 		746B3DEE282E8D560041066D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B3DED282E8D560041066D /* AppDelegate.swift */; };
 		746B3DF0282E8D560041066D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B3DEF282E8D560041066D /* SceneDelegate.swift */; };
-		746B3DF2282E8D560041066D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B3DF1282E8D560041066D /* ViewController.swift */; };
+		746B3DF2282E8D560041066D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B3DF1282E8D560041066D /* MainViewController.swift */; };
 		746B3DF5282E8D570041066D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 746B3DF3282E8D570041066D /* Main.storyboard */; };
 		746B3DF7282E8D580041066D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746B3DF6282E8D580041066D /* Assets.xcassets */; };
 		746B3DFA282E8D580041066D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 746B3DF8282E8D580041066D /* LaunchScreen.storyboard */; };
+		746B3E06282EA6650041066D /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B3E05282EA6640041066D /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,12 @@
 		746B3DEA282E8D560041066D /* SpringHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		746B3DED282E8D560041066D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		746B3DEF282E8D560041066D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		746B3DF1282E8D560041066D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		746B3DF1282E8D560041066D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		746B3DF4282E8D570041066D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		746B3DF6282E8D580041066D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		746B3DF9282E8D580041066D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		746B3DFB282E8D580041066D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746B3E05282EA6640041066D /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		7D9D44AFB9CD6809F0AC907B /* Pods_SpringHW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpringHW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FF20E366772D89732CBB5B /* Pods-SpringHW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringHW.release.xcconfig"; path = "Target Support Files/Pods-SpringHW/Pods-SpringHW.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 		746B3DEC282E8D560041066D /* SpringHW */ = {
 			isa = PBXGroup;
 			children = (
+				746B3E04282EA64E0041066D /* Models */,
 				746B3E03282E8E3B0041066D /* Supporting Files */,
 				746B3E02282E8E2D0041066D /* Controllers */,
 				746B3E01282E8E1A0041066D /* Storyboards */,
@@ -90,7 +93,7 @@
 		746B3E02282E8E2D0041066D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				746B3DF1282E8D560041066D /* ViewController.swift */,
+				746B3DF1282E8D560041066D /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -104,6 +107,14 @@
 				746B3DFB282E8D580041066D /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		746B3E04282EA64E0041066D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				746B3E05282EA6640041066D /* Animation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F85DD1A6405F4E8949CD49A9 /* Pods */ = {
@@ -230,8 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				746B3DF2282E8D560041066D /* ViewController.swift in Sources */,
+				746B3DF2282E8D560041066D /* MainViewController.swift in Sources */,
 				746B3DEE282E8D560041066D /* AppDelegate.swift in Sources */,
+				746B3E06282EA6650041066D /* Animation.swift in Sources */,
 				746B3DF0282E8D560041066D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
